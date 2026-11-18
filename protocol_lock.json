@@ -1,0 +1,1217 @@
+{
+  "schema_version": "1.0",
+  "protocol_version": "1.0",
+  "frozen_at_utc": "2026-11-18T16:06:10.466686+00:00",
+  "status": "locally_frozen_not_GitHub_submitted",
+  "previous_lock_sha256": null,
+  "amendment_note": null,
+  "frozen_files": [
+    {
+      "relative_to_stage3": "../bls_ai_stage2/DATA_QUALITY_REPORT_ZH.txt",
+      "sha256": "7f4cdcf810450bdcecf4929ebd0a2aff446b125f7527b7e5c36ada721db6a999",
+      "size_bytes": 3029
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/PROJECT_FILE_MANIFEST.json",
+      "sha256": "a324e7c0cbd34f943e6c2ea1437a33e70998cbb32d5d1fa00871a684ab7bb8fb",
+      "size_bytes": 31005
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/README.txt",
+      "sha256": "bae559746df0455bfa18e861315fe0181e79223e77e509e8203a0493eac961d6",
+      "size_bytes": 6014
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/SOURCE_TIMING_AND_ANALYSIS_LIMITS.txt",
+      "sha256": "f50904887211e5ae1949fa1267bca31804502a8b5fa3d9f1dca67b57d2c0613d",
+      "size_bytes": 3739
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/STAGE2_METHODS_BEFORE_RUN.txt",
+      "sha256": "220445d597cba0b50a7a0d7a061dc7b726218f540ee725f1d747c9824e8df502",
+      "size_bytes": 4894
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/assemble_stage2.py",
+      "sha256": "123ac258367f322f308476a144b323b121b96589b44b7c64dd7f9f6b62de9918",
+      "size_bytes": 8443
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/bounds_core.py",
+      "sha256": "15975769bae5325a95af661acd06729f7bc38086e31ea4f36af9df0e951e31db",
+      "size_bytes": 11195
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/bounds_pipeline.py",
+      "sha256": "09ad7572a8d8f3bb3e31cb47f1102e05bba1a549f66c728c2632cd9d8c01dbd4",
+      "size_bytes": 10548
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/cache/2021-31_matrix_64d6b2fb5e1861f3.json.gz",
+      "sha256": "2a724461d223d78e542cd922cf31f4e6bf174e2eac46ece67c0e772ebead7a28",
+      "size_bytes": 3203299
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/cache/2022-32_matrix_9adc65376b02273f.json.gz",
+      "sha256": "16e20fdb09652de29e41339049b8c223e39672b30b7df9e65f3da42a602de585",
+      "size_bytes": 3272061
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/cache/2023-33_matrix_941e6090b6e6b0d5.json.gz",
+      "sha256": "f343fd684ed0bba30b4815819b4a32907d64278f2be6d89ab3a8744ebdaebaeb",
+      "size_bytes": 3324112
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/cache/2024-34_matrix_182c131ab3c8aa21.json.gz",
+      "sha256": "055dcdb9fabe6dcc4b67e6bbadec8e79d58d090c3094c7bb3710094e130b1d86",
+      "size_bytes": 3254206
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/cache/2025-35_matrix_cf0a39bcefe3f427.json.gz",
+      "sha256": "36aea2cf9ca9c31a2806496f839f800819e6e63c00a5a95ca4dfce9b7beb3f81",
+      "size_bytes": 3263201
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/column_capacity_bounds.py",
+      "sha256": "66afca336c586e64d32c0a9c1fa43700ab68580d3b2840339236845f622e20da",
+      "size_bytes": 6761
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/README.md",
+      "sha256": "6302b37f272d97b610a723c1d4a61752fe3cd24b32a7795d5989c5a2f0275aa9",
+      "size_bytes": 8430
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/build_controls.py",
+      "sha256": "0ddaf9b1fdc7d0a20b8a941348dc7881950137d4bb5ac8d1ed6264d3b1510e1d",
+      "size_bytes": 20893
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/controls_audit.json",
+      "sha256": "f8e75a56e1aaf3b6b7e3933f227c6e61fbb95111716635fc0805b4202148340e",
+      "size_bytes": 4859
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/controls_panel.csv",
+      "sha256": "1eaffb93903c6483df5433d75ef70902e8ec3829346cf6c8e062fff001fe5538",
+      "size_bytes": 5509222
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/education_category_counts.csv",
+      "sha256": "e5ddc81f4648526ff502031834eaa0636f9ac84ea75c41873e337be0ded5b685",
+      "size_bytes": 1550
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/rebuild_controls_offline.py",
+      "sha256": "75c1d183ec324ce8675839329513b181baae3b5eb5f626098b837076b63b23f3",
+      "size_bytes": 198
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/source_headers_and_footnotes.json",
+      "sha256": "15925dc985b81ef051b188124e49f57fe4e57ec37b128a11e379570ea92837bd",
+      "size_bytes": 19386
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/source_manifest.json",
+      "sha256": "3daeae3df6b56da1ca356e002704e7ad842aea8895fbfa12d7914819ab511d37",
+      "size_bytes": 5110
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/verification_controls.json",
+      "sha256": "02ce555af9d8e7a1974267db59aae37b8059d9b3b52d2e13aa4cdabe6e7e4f5e",
+      "size_bytes": 684
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/verify_controls.py",
+      "sha256": "1daff65289244f71dd167c59a81f564dcfcf7d8d624e2edcd4cc4308b1f86d34",
+      "size_bytes": 5923
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/wage_timeline_by_vintage.csv",
+      "sha256": "60810d9f9ab2885bd36a25866f36c0a9ee0e12b72a6eda05a9bc77fb75b99bd4",
+      "size_bytes": 1189
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/controls/wages_censored_or_missing.csv",
+      "sha256": "8a3d0446238e81df8e5e979268e7cc74f857102b24163f7ef277ba51cd9ffc27",
+      "size_bytes": 130372
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2021-31_matrix.xlsx",
+      "sha256": "64d6b2fb5e1861f39e65d60682433e7646c598433efbd3a817c8af697c276280",
+      "size_bytes": 8333556
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2021-31_occupation.xlsx",
+      "sha256": "cfe8f7f8be5c692d4961a433fa297d5924685ff97b9f66c4bddbea52e165adcd",
+      "size_bytes": 474260
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2022-32_matrix.xlsx",
+      "sha256": "9adc65376b02273fa1e02b4c8daa3a39bf29ce0215dc8cb980a37bda69c77302",
+      "size_bytes": 8115138
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2022-32_occupation.xlsx",
+      "sha256": "51ac45c3af75980a7617966790b36ce8bd4774e3afb0e75be9eb09aad74c8ac1",
+      "size_bytes": 436808
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2023-33_matrix.xlsx",
+      "sha256": "941e6090b6e6b0d5c9bb75caad9e24e821936cb3d98c0380458757d94d00545e",
+      "size_bytes": 8236760
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2023-33_occupation.xlsx",
+      "sha256": "b34b662be29f1d2e0c1f212b9a174e02e75d465398e27ec76fa94f1693e8260a",
+      "size_bytes": 339093
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2024-34_matrix.xlsx",
+      "sha256": "182c131ab3c8aa21df5e6aa7cfa3a182be06f2b05836a205918bbe595bf79f34",
+      "size_bytes": 7911427
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2024-34_occupation.xlsx",
+      "sha256": "bebf85e71d3a274eb0531077a9fe1bbcd1167e0a14c59e33071f61cbda9d3a57",
+      "size_bytes": 407365
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2025-35_matrix.xlsx",
+      "sha256": "cf0a39bcefe3f427af74b53006003a7e3afaa9623e1b9933349b1a5a8ef55b4d",
+      "size_bytes": 7933317
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2025-35_nem-industry-coverage.xlsx",
+      "sha256": "3839ad0a8e5ebe27f4c3da4f2c3fde359e16926bce00103403ea6f8c0ff8e6d2",
+      "size_bytes": 32618
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/bls/2025-35_occupation.xlsx",
+      "sha256": "08ee182f992d972593e64559ce467bad75967d2228f11ad5e2f86d4ec0ee6c00",
+      "size_bytes": 413524
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/anthropic_commit_evidence.json",
+      "sha256": "ebe6c8635b29c17fd435a67c32d464856793d69b08cba067b64210b5f860322b",
+      "size_bytes": 625
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/anthropic_job_exposure.csv",
+      "sha256": "4f0a3adf5feeb2ec5f5d02ab18cc5e851a2a4b8470bde84c0c9335017be12d68",
+      "size_bytes": 37176
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/bls_2025_35_ai_exposure_categories.xlsx",
+      "sha256": "51f5779feea35b89d9c688970ebb9d2e03fca514b39a5100b66faa88abffb52b",
+      "size_bytes": 98102
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/bls_nem_occupational_coverage.xlsx",
+      "sha256": "005e13282247b2b5bfc957add9912c90bd6cac9fb136cabd0b44573d1cf41d26",
+      "size_bytes": 59682
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/bls_nem_onet_to_soc_crosswalk.xlsx",
+      "sha256": "cf3c6e6cf1198f9896a0e280c7503f6cc2202be0660d5decff9c4562c78556e3",
+      "size_bytes": 94441
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/bls_soc_2010_to_2018_crosswalk.xlsx",
+      "sha256": "f3a847561562d3e5a30eb848f2902a5f7b02e9c48b3d7f2cc8879899fbc242a7",
+      "size_bytes": 46630
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/bls_soc_note_2010_to_2018_crosswalk.pdf",
+      "sha256": "18e05874b6976ef06b637c6d975d4f602643d4f4d5e38ee1db2f08c683426a04",
+      "size_bytes": 147117
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/eisfeldt_author_site_genaiexp_estz_occscores.csv",
+      "sha256": "46840e32def3b7f8a1a1d6a55dd793b51624ccb85b20466e187c205571711a1d",
+      "size_bytes": 24195
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/eisfeldt_commit_evidence.json",
+      "sha256": "8832755c6f37655e408a26d1211425e2524934537656f8694261e78aec66505c",
+      "size_bytes": 1866
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/eisfeldt_genaiexp_estz_occscores.csv",
+      "sha256": "46840e32def3b7f8a1a1d6a55dd793b51624ccb85b20466e187c205571711a1d",
+      "size_bytes": 24195
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/eloundou_commit_evidence.json",
+      "sha256": "cc50af438669fb6143ffcd2eabb77fa9b0b7a73f7d2324f5d942b3ba46a4083c",
+      "size_bytes": 4445
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/eloundou_occ_level_six_ratings.csv",
+      "sha256": "40c74f53de40aec91c0017d80690cbba915f83a8bb414bcf2f884692f1749acb",
+      "size_bytes": 126022
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/felten_2021_AIOE_DataAppendix.xlsx",
+      "sha256": "c123b4c64840aff3568ae6c97256678719b88a74d45b6362dbefb5af34667b95",
+      "size_bytes": 170359
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/felten_commit_evidence.json",
+      "sha256": "c3fdb4ff4c08b6c19d57a3acb8924d6f2ed7fc2d922dda8d30411ac2ddaab02c",
+      "size_bytes": 3986
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/microsoft_commit_evidence.json",
+      "sha256": "d2878819e1a7583100ff601727c5aa552bfa1d5f09c7f4ecdad355ada4e28bf2",
+      "size_bytes": 1460
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/microsoft_v1_1_README.md",
+      "sha256": "5f5f4e3acae4fc5e14d8cd64ef957363795a433b9498c5ae346c9d2fc8cd9b08",
+      "size_bytes": 10924
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/microsoft_v1_1_ai_applicability_scores.csv",
+      "sha256": "204c7e6a5ec704156212f88a6282dba7508c8b90e5df7c0d590088b2b44aa7d2",
+      "size_bytes": 50018
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/exposure/onet_2019_to_SOC_Crosswalk.csv",
+      "sha256": "506fff0a3ca0d26137b9389322413022a4348bead559c4dd24edeb2cea86aa89",
+      "size_bytes": 91732
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2021-31_nem-industry-coverage.xlsx",
+      "sha256": "4e9406ea9a30ce4f6199f695c08f9d1dacf29dd8305bf778caf9fb321ab8d4e9",
+      "size_bytes": 36438
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2021-31_nem-occupational-coverage.xlsx",
+      "sha256": "3d8e86aabd837f3378da74548f6d70109478c6015563cff4870242373da12a8a",
+      "size_bytes": 61606
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2021-31_nem-onet-to-soc-crosswalk.xlsx",
+      "sha256": "7471f4dbc23734b017505834c82f52d478698dd954940eb85a34b309389dae9a",
+      "size_bytes": 137922
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2022-32_nem-industry-coverage.xlsx",
+      "sha256": "0acb7ca12e39b9b74df68244593d8a9a7a7390a2735046298d46a6a1bfada50d",
+      "size_bytes": 32507
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2022-32_nem-occupational-coverage.xlsx",
+      "sha256": "a8b983c9b800b528ee36745ce504c1a42b62ae6835bec3a81099f73e54bdb996",
+      "size_bytes": 48606
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2022-32_nem-onet-to-soc-crosswalk.xlsx",
+      "sha256": "5aac9713a7e73b428819b20e3b895c97adbf09b4b59ac8c9423a340dbe129a4a",
+      "size_bytes": 119105
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2023-33_nem-industry-coverage.xlsx",
+      "sha256": "7b3d35e02cdd548753a62aa62315a5344be0117d8aff3d30b037618ccc358e61",
+      "size_bytes": 32779
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2023-33_nem-occupational-coverage.xlsx",
+      "sha256": "53589dd1e90a62fcd4e74a503e9c1afc1f2471d5818a2520f99d3239cc3fcd60",
+      "size_bytes": 48607
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2023-33_nem-onet-to-soc-crosswalk.xlsx",
+      "sha256": "b35ffb4d332defb23a9b87f963c5bedf06a0f39582fcbfefa14cd8bb52b804b0",
+      "size_bytes": 93723
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2024-34_nem-industry-coverage.xlsx",
+      "sha256": "8462f00509fd85f8ed30270a6ead6f4a3f6447d41e20c93b7f6ce964e6c5b3a6",
+      "size_bytes": 32561
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2024-34_nem-occupational-coverage.xlsx",
+      "sha256": "f98d634cdb68e5a2dde6cd1bb6335094533c82a0c6a939017aa6a7b8eea6673c",
+      "size_bytes": 59623
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2024-34_nem-onet-to-soc-crosswalk.xlsx",
+      "sha256": "faeff84413dc4828f1a6b3154012a34d804b2e2067477ab6895eb62fd4b9bc06",
+      "size_bytes": 119300
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2025-35_nem-industry-coverage.xlsx",
+      "sha256": "3839ad0a8e5ebe27f4c3da4f2c3fde359e16926bce00103403ea6f8c0ff8e6d2",
+      "size_bytes": 32618
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2025-35_nem-occupational-coverage.xlsx",
+      "sha256": "005e13282247b2b5bfc957add9912c90bd6cac9fb136cabd0b44573d1cf41d26",
+      "size_bytes": 59682
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/2025-35_nem-onet-to-soc-crosswalk.xlsx",
+      "sha256": "cf3c6e6cf1198f9896a0e280c7503f6cc2202be0660d5decff9c4562c78556e3",
+      "size_bytes": 94441
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/census_2022_NAICS_Structure.xlsx",
+      "sha256": "217c9e0d4d74e7517bc288f5f308b73aa0de5ee787976a6dd222412be28ada22",
+      "size_bytes": 88218
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/data/raw/industry/census_2022_to_2017_NAICS.xlsx",
+      "sha256": "76ed2d5bc8cd3443dc86f0c3225b83e6d187f3fc47d4c5696c911a3234f1716f",
+      "size_bytes": 61577
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/README.md",
+      "sha256": "0aa9e50cb4bc6c69aaefe952cd1ea3b82703f2d2dc3d7bf91abc84626e10ca55",
+      "size_bytes": 12333
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/audit_exposure_sample_coverage.py",
+      "sha256": "3ffd4018a2f11bdc01aa0c43247fb139edbcac7d4107b8f7585ca4027411b59f",
+      "size_bytes": 11236
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/build_exposure_dimensions.py",
+      "sha256": "e30f48bf5547899f836d4169f50720437467661f84537bddf71ad2bb2e512bc4",
+      "size_bytes": 17877
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/discover_sources.py",
+      "sha256": "4a6dd5a490339ecb620ee4aaceec14ee8ddcc61fcda30f825e9fc34083d1231f",
+      "size_bytes": 1482
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/ep831_2025_base_employment_for_mapping_audit.csv",
+      "sha256": "a4ebe493c37a9cc2c79be05cc43d4c0bcc1c4a775e5a44192138751ef2e3b31e",
+      "size_bytes": 82588
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/ep831_target_universe.csv",
+      "sha256": "0308ecaba590a461298becc488cddb03991d1db99ba23c0d4c0bba30d2e41566",
+      "size_bytes": 36845
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_dimensions_aggregate_sensitivity_ep831.csv",
+      "sha256": "6c6112935d229d572c9311aa218f3f458cb0032c6a9a18a8ec1b85fd8e60c53a",
+      "size_bytes": 327234
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_dimensions_strict_ep831.csv",
+      "sha256": "3b1dd39965bca89b5ad926e0b62793ab5102e8ffffb5fe3dcf2f4d3fba718a09",
+      "size_bytes": 291618
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_excluded_occupations_by_base_employment.csv",
+      "sha256": "bb4f39c8d5f6a4fe37aa5086c0da38ad7fee27323a1c72feeff690e5c9a99670",
+      "size_bytes": 79421
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_excluded_top25_by_base_employment.csv",
+      "sha256": "997b33e3fbca8ce9be9b718ea8c2511ec1b86ac4fb55df3f0fd1e76c5a020af0",
+      "size_bytes": 11525
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_mapping_audit.json",
+      "sha256": "a33e2d506bdec290b235a49cd83ff333bf26ab8eadadc3834dbb458d70e9d611",
+      "size_bytes": 6448
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_pair_specific_coverage.csv",
+      "sha256": "ee0a8e0d95e36c8c9796b8f5c9a3f3179f88c959d43fe98205892342d54885d5",
+      "size_bytes": 2531
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_sample_coverage.json",
+      "sha256": "d17886168b20666b77a835f0f5ec33a88a2027c46ef788dd618253bf6ccb99a3",
+      "size_bytes": 10038
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_sample_coverage_by_soc_major.csv",
+      "sha256": "96ec9fefdb9f6ad7adb042b5eb2736ed77ec814929ae1e1d25fad0fbd4061a1e",
+      "size_bytes": 7731
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_sample_coverage_summary.csv",
+      "sha256": "732b413bd0211ddd38f8e08cee4afecd1c5ad89540f54dc31400214dc5e784ba",
+      "size_bytes": 508
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/exposure_source_coverage_by_base_employment.csv",
+      "sha256": "46c057952783801a0d49896cd34884f1edb571818fc2de7478bb0115331fdf94",
+      "size_bytes": 737
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/fetch_exposure_sources.py",
+      "sha256": "eb9b9fe6213164229f9397025b1ca800391c3d4eecac6665c25000386b10b7b1",
+      "size_bytes": 9546
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/five_source_complete_cases_aggregate_sensitivity.csv",
+      "sha256": "40832e276d94f5a36fbb037e7ec2ff2fef743398fed0863bc7db4a5dd2330f46",
+      "size_bytes": 292953
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/five_source_complete_cases_strict.csv",
+      "sha256": "f0fded88df1ce417bc620d24b192569edc4766a4f4713464f4e2af6e1970c24d",
+      "size_bytes": 252468
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/mapping_edges_anthropic.csv",
+      "sha256": "608cea6a0fb027376bc2bec50a1f289b644a035234ce83f2778f56abe3b487fe",
+      "size_bytes": 67003
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/mapping_edges_eisfeldt.csv",
+      "sha256": "7c4ece3b873df3e012e2d65bcb9436fe3e490994cb8f0a2213466238e636a608",
+      "size_bytes": 44549
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/mapping_edges_eloundou.csv",
+      "sha256": "fcd58e07de850e7dbe4a77f9c374b6440a631e3205aec1b016114c835588dc1d",
+      "size_bytes": 157029
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/mapping_edges_felten.csv",
+      "sha256": "ef247b18e28127f2ea6219138dc5d2f77aa80d92ba3400451ba548522f8f68bd",
+      "size_bytes": 71878
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/mapping_edges_microsoft.csv",
+      "sha256": "0082fcc5b04adae0e7065c5c9b405e751cfaf475fcb109ecdb9a4920ba5a0f1b",
+      "size_bytes": 77399
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/normalized_native_anthropic.csv",
+      "sha256": "b05304997ee34426e903cebad9a04f776ce5d77f09108011544a355c76d11424",
+      "size_bytes": 37187
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/normalized_native_eisfeldt.csv",
+      "sha256": "3bcad66629656f3c8e3ff7a12ad4c011b02e6e9d31ccb0776277048fa54b160a",
+      "size_bytes": 14899
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/normalized_native_eloundou.csv",
+      "sha256": "bd6a89a4cb7b53a618408883450e4d00c175b888a591178bbb14dc3e564ea305",
+      "size_bytes": 122766
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/normalized_native_felten.csv",
+      "sha256": "dd70877bf703510923fc0441645c1fec6a9f4055e9628862fc97c50250d83ccf",
+      "size_bytes": 41642
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/normalized_native_microsoft.csv",
+      "sha256": "4ae82e87cf0b422e25ff5de30d4a14bfcfa1710dee1367e9d47d15b2946f7609",
+      "size_bytes": 49328
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/occupation_source_mapping_audit.csv",
+      "sha256": "0ff70fc3fbbccbd2c80c5952148b90025c06da96a4e80e9d563a1dfe8d2df38f",
+      "size_bytes": 461288
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/official_onet2019_soc2018_ep_crosswalk.csv",
+      "sha256": "c01d5002f0f98cbcf4f18b73258a42a659fbee61a41122cccb4feb35b933bd7e",
+      "size_bytes": 136012
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/official_soc2010_soc2018_ep_paths.csv",
+      "sha256": "2d08b64b29aab9bfe86845b49794641bf0272ecd35d528e7085140344717373d",
+      "size_bytes": 98636
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/official_soc2018_ep_crosswalk.csv",
+      "sha256": "e479d80bbca12002ae1377008e997f3c4cefd579094cde63ba1f6d422dd7bf78",
+      "size_bytes": 76413
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/rebuild_exposure_offline.py",
+      "sha256": "c77e1258af3537e9562c061045e3abb02866bdc8de61c42ee51c27f1adeebfc7",
+      "size_bytes": 314
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/source_manifest.json",
+      "sha256": "bfe4a7e90acdbf640d4d5f09505ac1d2579fe7dd26d350e6ec58308d2bb688b4",
+      "size_bytes": 18091
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/source_version_evidence.csv",
+      "sha256": "e924f7c427751cf6f8eb4f3b5705d498cc94adbcd8a4c6d13f1e60acd57f3f36",
+      "size_bytes": 3273
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/source_version_evidence.json",
+      "sha256": "fd6a8f5fabd9ab3b0f27019316828f99888488eae3031a84d1e9c05270fec99b",
+      "size_bytes": 4745
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/verification_exposure_outputs.json",
+      "sha256": "6e6eb3afbaf334b271d8763f635bb0835c89e4af86cb76c7a9b20655f5b61c83",
+      "size_bytes": 858
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/exposure/verify_exposure_outputs.py",
+      "sha256": "bfef8aa616ae550517dc99edd86685012088eeb843e57f9f00b1c47fe43ae6d1",
+      "size_bytes": 4241
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/hierarchical_bounds.py",
+      "sha256": "07a9372ec85a56d8f244342187cc089f4c29eee77e570a09c3d3cf7d551be858",
+      "size_bytes": 16644
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/README.md",
+      "sha256": "d7fa858282722d0baca1197bdf17599187949dc948de1abb74d52c85abb02a9c",
+      "size_bytes": 11578
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/audit_cross_vintage_support.py",
+      "sha256": "f4844a8dba8bed817dc2f63986e0d88bfc0bcfb70528b00624afc3782d8f84ed",
+      "size_bytes": 12493
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/audit_run_summary.json",
+      "sha256": "fdd59441f1cc6e39ffeecd9c3a7e99de29c221f18499f317f741d6ac514ecf86",
+      "size_bytes": 12671
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/build_common_partitions.py",
+      "sha256": "2e6a123bc6c50bb2b791ee1ec07d6605acf89cc95d424cea089188840a5b7820",
+      "size_bytes": 23147
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/common_occupations_stable_mapping.csv",
+      "sha256": "9fd5b81b5c2a60fcdc51e3cd3dea5faa31872a7d1b9004be7a0a9d91a254b006",
+      "size_bytes": 122831
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/common_partition_decisions.json",
+      "sha256": "29f7badb4fb02aad3bf893fa4e75236f90d905648f7119a0948c6ad61e5ee69c",
+      "size_bytes": 263641
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/common_partitions.json",
+      "sha256": "58836a70cf7ba35bc666d1399a0ee2bb2c08e1503729b8b96807f9a46f735483",
+      "size_bytes": 195389
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/coverage_summary.csv",
+      "sha256": "2b87e794cacff5513a89d1329737703497dcc9a33f5314ecff133a8f2ff06b0b",
+      "size_bytes": 1615
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/coverage_summary_common831.csv",
+      "sha256": "94b623cbaa0ca7d53b479200b0f64ee3aa992e44eb4e51215f69acb743845e85",
+      "size_bytes": 1611
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/industry_definition_audit.json",
+      "sha256": "0b5d810ae9a5d53b44884772ca5202941708d36f0b77e4be6f6ae0fe061d29e8",
+      "size_bytes": 2999747
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/industry_support_audit.json",
+      "sha256": "ae88829e387afac3ec6ec1f9f504c6d7be4d6cb0e238c8f5f344aa564164e209",
+      "size_bytes": 44702
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/occupation_cell_coverage.csv",
+      "sha256": "badb1170017830fe6e2cee2c4d43839b257d277422c99165ae48ecb50cfddcde",
+      "size_bytes": 2080457
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/occupation_definition_audit.json",
+      "sha256": "c54207ed089b1fe832ffe92852f68983dbf31f3db6d63295f22a1c7257821059",
+      "size_bytes": 1032636
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/selected_industries_by_vintage.csv",
+      "sha256": "f5b4fc49f96a7f3d1bf1129d53deaa64e58af5383e92fb8870ff931f6b9de686",
+      "size_bytes": 141758
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/industry/source_manifest.json",
+      "sha256": "8ba9c852ebc77ef81fb5867a81cfaac879491347e925b5481afda2c771c9ad53",
+      "size_bytes": 4699
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/manual_review/READ_THIS_FIRST.txt",
+      "sha256": "e88b562917ce096729e480b61deea626bd3cd37cd3fe19db0495298099144c69",
+      "size_bytes": 534
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/manual_review/SOURCE_TIMING_NOTE.txt",
+      "sha256": "7d3dac8ded01644790a83fef9504b78ac3b06bb06fe024f9ce4345f4a5c83ea0",
+      "size_bytes": 661
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/manual_review/keyword_priority_queue.csv",
+      "sha256": "bfbd88c590acc33a7d2165bcd074c5d75b89df3e0c88f21f475b7452c6df3074",
+      "size_bytes": 120306
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/manual_review/search_protocol.json",
+      "sha256": "a4242c412007395f67065038116889aa9eec0535744eea9918cacddcdad47451",
+      "size_bytes": 973
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/matrix_io.py",
+      "sha256": "287f6688cc77e1df683d72f777583bcc7fdf05e1558d1da1a5c290f66268e83f",
+      "size_bytes": 1174
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/accounting_outer_bounds.csv",
+      "sha256": "2779b0d1d150a16e1604c382019a7b2dcad15de4ea43c289cdf12caf7f5eae7a",
+      "size_bytes": 5325949
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/accounting_outer_bounds_final.csv",
+      "sha256": "5cd1c6ea1421eeff7d7bdc66c69542bed4beb5236b402dbcf1c96c1cabea20ec",
+      "size_bytes": 5583938
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/accounting_outer_bounds_with_parents.csv",
+      "sha256": "792b115a9313a83c58fa13668f5a4c786d017eb474afd26c6d91528b8c6624e4",
+      "size_bytes": 5557802
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/all_raw_input_fingerprints.json",
+      "sha256": "c4be2f4f6f366925c8a1f9888049078e48234abae888eddbce3b67ecdf002013",
+      "size_bytes": 8273
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/bounds_algorithm_verification.json",
+      "sha256": "b0e9846d136f8f06d6273e79692316575586171a9c99c426c8ece0d9b1a566d6",
+      "size_bytes": 383
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/bounds_diagnostics.json",
+      "sha256": "7ceb7ff0057784d234de5b20d2ca9c337334c1fce9f9a9ae681ca9f0e2e180cb",
+      "size_bytes": 16075
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/bounds_run_manifest.json",
+      "sha256": "5b9ce3768959f7e1541d7caa4621cd6e46af2b389c9a1e888cb569d3bb28a97c",
+      "size_bytes": 884
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/final_bounds_diagnostics.json",
+      "sha256": "bc6ccefbdbc3b4f949194e6527a49c5962837507dde9f7f13fc862f2c9291eb0",
+      "size_bytes": 12898
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/final_bounds_run_manifest.json",
+      "sha256": "4a6c7b40691f0325ef2c1cfa2ed440975ba0f3d15ed3a920a78cf36c351329a6",
+      "size_bytes": 500
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/joint_margin_feasibility.json",
+      "sha256": "ffed0e38a8e24e8b486bbf568670a60f1c8cc6a55444ef4075c551666af2d2f2",
+      "size_bytes": 19324
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/measurement_diagnostics_common831.csv",
+      "sha256": "74f9b2821430e2031083181953d8ab5cd32c9027916db01f74be8883dd25336c",
+      "size_bytes": 3478
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/measurement_exposure_panel.csv",
+      "sha256": "1c128783a1f1b844079582b1ca55d231dae440e78e832980de6b20d23c896dec",
+      "size_bytes": 8897181
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/parent_algorithm_verification.json",
+      "sha256": "1df09d4f1f0e5501102373ce4ea69df3bd6ac40a9f0e3f898ef6df9e230cd394",
+      "size_bytes": 449
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/parent_bounds_diagnostics.json",
+      "sha256": "f03f040299c9e5007d6c3cd2d80c1e8b651035a196302a0d2e0094e19681a7a7",
+      "size_bytes": 13763
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/parent_bounds_run_manifest.json",
+      "sha256": "90c92b1cf56511ec19cfdb1888c276f5edf61c9418f6a22c73e4862c1aa7fe5e",
+      "size_bytes": 1267
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/parent_constraint_audit.json",
+      "sha256": "3a31ec5ac236f600375f8b177138d0ae337fd5abdd1837b60f41bacaf1bcf0b5",
+      "size_bytes": 41401
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/parent_margin_feasibility.json",
+      "sha256": "98f9f72c43140e94d2f3924b0c5679bb60386a85f2ce58980c5b001cf118c9c5",
+      "size_bytes": 9522
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/published_precision_evidence.json",
+      "sha256": "fcaeb859562227af7cd998497b12fa73b942f89c44ed1c70137cdb1596be839f",
+      "size_bytes": 3847
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/rolling_revision_outer_bounds.csv",
+      "sha256": "c8bd734ea74501b56f18cdb6bae0079ab6422d6892066d4b247ef6cb1cb070cf",
+      "size_bytes": 2124870
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/rolling_revision_outer_bounds_final.csv",
+      "sha256": "80d836f42c4a1f7ec427b2609749c3a355e42a105ac4a446c2fcb6bdf197158b",
+      "size_bytes": 1613602
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/rolling_revision_outer_bounds_with_parents.csv",
+      "sha256": "77d49ee9fc99a47945d176a5ff04f38cdbc5047fd2a97ac6ef59c4053c7cfa87",
+      "size_bytes": 2197481
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/output/stage2_validation.json",
+      "sha256": "131280b6877ed2d6c4c3cfcc561f2d00c8bfd95289374ae7cee42775e828b2b3",
+      "size_bytes": 1135
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/package_project.py",
+      "sha256": "880ce77f07268c4c764cace2a14aa35910d014613c5bcfbdd105f5565fb235f9",
+      "size_bytes": 1472
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/prepare_manual_review.py",
+      "sha256": "d5fdd925ab542455a9a34e33af5e1e2adb5406836de6b46bb2e451b2bb95d867",
+      "size_bytes": 2949
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/rebuild_all.py",
+      "sha256": "a27140bfffa14b8ab6ce7c9abd63ec149eb52a8b50965668401ed27028efdd59",
+      "size_bytes": 1291
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/requirements.txt",
+      "sha256": "407350b52235df35082d3ab615235eabd2fce0594b492f0124847542c5f33072",
+      "size_bytes": 142
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/ANALYSIS_DECISIONS.txt",
+      "sha256": "0cf0b8f48278266ce34be60d45ea36a6297e30facfc64e0ff6b80cc981154732",
+      "size_bytes": 9266
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/MANUAL_CODING_RULES.txt",
+      "sha256": "b0bf6eca9a1032b9eb5fda94b98c91af4532ccce8e04a0fa5703a6ae8e698004",
+      "size_bytes": 3263
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/README.txt",
+      "sha256": "ae3fe00d4bf94f388191534afc0df43d46779c86340a397e4d7e5e1c01fdf315",
+      "size_bytes": 6099
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/SOURCES.txt",
+      "sha256": "50d6ef92d5f19c92a0afa1180da9240fe1fd31a21c667af6f290e48adf3184da",
+      "size_bytes": 4261
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/bls_pipeline.py",
+      "sha256": "89e50d80ec9386610800d968bd8bfd6dcb5b8a8addf78093f152f2e94e9c2787",
+      "size_bytes": 20276
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/industry_partition.py",
+      "sha256": "1406cf3f090723f6a817a9369c1015c4bd7f5e2e1074a380664715e81cc25a71",
+      "size_bytes": 4688
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/data_audit.json",
+      "sha256": "10d00db9809f86cbe8b0797cd1bc232adfdfb97b2feb079ddc592687ede00964",
+      "size_bytes": 4996
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/decomposition_2025_35_observed_support.csv",
+      "sha256": "178ca6204392c7aac27d54052232bcbfe53a9a81ad133351163c4a95064f4018",
+      "size_bytes": 1138476
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/industry_catalog.csv",
+      "sha256": "8d2489518afd1fe7780493db2bfc13ae9b926a16966846af64adde5a4b07559d",
+      "size_bytes": 176473
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/industry_partition_2025_35.json",
+      "sha256": "c0e3db1d57ae3cb197d64d8fee54b7c60d2e07184d3bfe419ad23564a6164ed4",
+      "size_bytes": 218505
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/occupation_code_alignment.csv",
+      "sha256": "ccc411577015c009dbf076ba8cd5ba6a4be788d0721658c5818284b434eeaa6d",
+      "size_bytes": 189491
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/occupations_panel.csv",
+      "sha256": "861e0d43006519aadf52e2a65ecfe8161116e6aa056adce634321a0eda7910e7",
+      "size_bytes": 456963
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/paper_results_placeholders.json",
+      "sha256": "b916a98a221fbc8792ec81866bee7c235a2879a44eae319082e3c8cbecab21b3",
+      "size_bytes": 347
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/source_manifest.json",
+      "sha256": "50affef604a45c1e249c4be4d83a64ec503ee6e3baaaac05ed9f1a51e1ac896a",
+      "size_bytes": 4765
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/table_1_12_manual_coding_template.csv",
+      "sha256": "f192bef47bfa8813c8418eded2c48357c61fc1e63cfa9c5ac1cfc0bffe5db44a",
+      "size_bytes": 1728869
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/output/verification_report.json",
+      "sha256": "5a79fa7f7f7e66298e456bfc8b3138aab5420e479fefcb0b025bb942126dd2b4",
+      "size_bytes": 1245
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/requirements.txt",
+      "sha256": "06d28d69e958deafb09f0a44fcae9b548f15e4debc14ebc39aad5f0934856fbf",
+      "size_bytes": 16
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/stage1/verify_stage1.py",
+      "sha256": "fdd80a7df7fecdf29ed43c4722f4a7b49f67246c8c3b7fd9663afc2bcfa5907f",
+      "size_bytes": 4609
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/verify_bounds.py",
+      "sha256": "f937847574d440283717d6d91e6a18b49e4a2eb886c251d0e541dd5995f01421",
+      "size_bytes": 3700
+    },
+    {
+      "relative_to_stage3": "../bls_ai_stage2/verify_parent_bounds.py",
+      "sha256": "4bc4d52e6b368793b2a2f71538291aa77ef94a342b7c9e59327549b156ca0172",
+      "size_bytes": 5428
+    },
+    {
+      "relative_to_stage3": "README.txt",
+      "sha256": "b870d5e66bb0449c64d435be3bcc913c3e6a4f51956e85532ac739164b244a88",
+      "size_bytes": 8767
+    },
+    {
+      "relative_to_stage3": "analysis_config.json",
+      "sha256": "a263a203a689c3bf6b6b56d0d867add755ce9f6cc9819f6bbd3c29e39f10e982",
+      "size_bytes": 4423
+    },
+    {
+      "relative_to_stage3": "check_ready.py",
+      "sha256": "40fd244ee36f33ac4157df5eb0b4bc7ff2f96b16da9984e500c95c80d405deab",
+      "size_bytes": 3042
+    },
+    {
+      "relative_to_stage3": "freeze_protocol.py",
+      "sha256": "a43c24764214124237512ede246d47f232b29e92e07ec1f08ea67cbfe7101e59",
+      "size_bytes": 3048
+    },
+    {
+      "relative_to_stage3": "methods/build_cluster_mapping.py",
+      "sha256": "a8e285af5c57bbc578eb74b93d461bcb729b8b76adb917fea6ee2b454cf8863b",
+      "size_bytes": 4156
+    },
+    {
+      "relative_to_stage3": "methods/cluster_mapping_audit.json",
+      "sha256": "35da6c3c45717d3ff2aa0a3538b8985ee6ec40ea4e042ec5149fad4daa71599d",
+      "size_bytes": 668
+    },
+    {
+      "relative_to_stage3": "methods/econometric_review.txt",
+      "sha256": "62b08e738738ccdf92ff12e73430caaeba6819123848e6e97a12ef4a1ca7e134",
+      "size_bytes": 12620
+    },
+    {
+      "relative_to_stage3": "methods/occupation_cluster_mapping.csv",
+      "sha256": "38d61840c6a7acea77c904434754945f1c358ca0613fc4d04fc18befabe3fbac",
+      "size_bytes": 55220
+    },
+    {
+      "relative_to_stage3": "methods/pre_fit_design_counts.json",
+      "sha256": "edc9d6e1f05b6886acc9b5dba9d7b1aa28adcdbb3fb344e204e3b8d31cdb6171",
+      "size_bytes": 1536
+    },
+    {
+      "relative_to_stage3": "model_core.py",
+      "sha256": "65189f94cf2e93e1e6240e2d5b742f39a98673e912c8aca9cd604c5f2b1a881f",
+      "size_bytes": 4917
+    },
+    {
+      "relative_to_stage3": "prepare_inputs.py",
+      "sha256": "a02cff3c5231d97a578fc9c64fa5fac7d99dccb760b1241b5784d65082029534",
+      "size_bytes": 5365
+    },
+    {
+      "relative_to_stage3": "protocol_gate.py",
+      "sha256": "0399d9c44403f145adb4f227e8cc3a2e01f03429cedeb13178d6d16f938ef6d8",
+      "size_bytes": 2875
+    },
+    {
+      "relative_to_stage3": "publication_candidate/ANALYSIS_PLAN.md",
+      "sha256": "6ecf74188d757bca1747ab5f8da480a7bf0461ecf04e850757bdcdfbd77892fe",
+      "size_bytes": 5402
+    },
+    {
+      "relative_to_stage3": "publication_candidate/Analysis_Plan.pdf",
+      "sha256": "b164b08296615614bc09e9ad843645dcfac4a4b1311de6da40e2b80b20c28c5e",
+      "size_bytes": 34654
+    },
+    {
+      "relative_to_stage3": "publication_candidate/render_plan.py",
+      "sha256": "643d7527b1a2938d24818262997c7adf2cf7eaacc4710e2e017c61817df031cf",
+      "size_bytes": 3713
+    },
+    {
+      "relative_to_stage3": "requirements.txt",
+      "sha256": "41b4c6a14166306b9f593728df115892a3f0a64aa4c153741b9579c14b74270d",
+      "size_bytes": 57
+    },
+    {
+      "relative_to_stage3": "review/export_manual_coding.py",
+      "sha256": "521437afb09e029cd54f6224a430ac317f136b918df34c181a7e37b40a03e54d",
+      "size_bytes": 7746
+    },
+    {
+      "relative_to_stage3": "review/input_manifest.json",
+      "sha256": "ff4a4f2be2c2ef7e049f1ffbe29dff3b0f7bd2b559ed12c4d39624ef1764adf8",
+      "size_bytes": 978
+    },
+    {
+      "relative_to_stage3": "review/manual_coding_protocol.txt",
+      "sha256": "1dbf4398bdb4864bdd9751864c78163ca0c9ba8b58c7dde5a1237088ba19f4a8",
+      "size_bytes": 3901
+    },
+    {
+      "relative_to_stage3": "review/source_rows.csv",
+      "sha256": "f192bef47bfa8813c8418eded2c48357c61fc1e63cfa9c5ac1cfc0bffe5db44a",
+      "size_bytes": 1728869
+    },
+    {
+      "relative_to_stage3": "review/source_timing_note.txt",
+      "sha256": "7d3dac8ded01644790a83fef9504b78ac3b06bb06fe024f9ce4345f4a5c83ea0",
+      "size_bytes": 661
+    },
+    {
+      "relative_to_stage3": "review/stage1_original_coding_rules.txt",
+      "sha256": "b0bf6eca9a1032b9eb5fda94b98c91af4532ccce8e04a0fa5703a6ae8e698004",
+      "size_bytes": 3263
+    },
+    {
+      "relative_to_stage3": "run_models.py",
+      "sha256": "2b99f37c0c9c2c786b7080bfb1bed47838e0ef3a184368e14419db7f4fc4f906",
+      "size_bytes": 13686
+    },
+    {
+      "relative_to_stage3": "timing/TIMING_REPORT_ZH.txt",
+      "sha256": "9ae7d92e13d1eb818f01b711ae92eb261b3ec4566f819c4e9121c75760db00a6",
+      "size_bytes": 8789
+    },
+    {
+      "relative_to_stage3": "timing/dated_capture_audit.json",
+      "sha256": "91d17ee23ffaa1be7109271246ed52c54af1dfcbdeaf6095a340b123ca7ef13b",
+      "size_bytes": 3468
+    },
+    {
+      "relative_to_stage3": "timing/education2021_dated_capture_crosscheck.csv",
+      "sha256": "0423a15925a2e862db148f2733bce89ef9b22c99a23ef9310450f18cd016b1ce",
+      "size_bytes": 197641
+    },
+    {
+      "relative_to_stage3": "timing/education_snapshot_lookup.json",
+      "sha256": "3cdaef9d873019230d9b3390de3ee75e1171347b7495098370f73eea63e617a1",
+      "size_bytes": 548
+    },
+    {
+      "relative_to_stage3": "timing/education_snapshot_manifest.json",
+      "sha256": "6beaf5449a80c1890df3e526e314b32833fb775009bf88cfca103a892ae21341",
+      "size_bytes": 588
+    },
+    {
+      "relative_to_stage3": "timing/fetch_timing_sources.py",
+      "sha256": "968c00b3da7e534712431750c92a78780956f7704040bfb3e73dcdd989f649df",
+      "size_bytes": 2827
+    },
+    {
+      "relative_to_stage3": "timing/publication_timing.json",
+      "sha256": "8dd580782eee93aa2ee5ec6f244d019ac26a5f5af6884b80ee8e8f0c176770e6",
+      "size_bytes": 4126
+    },
+    {
+      "relative_to_stage3": "timing/raw/bls_ai_case_studies_2025.html",
+      "sha256": "81ec5164335339d4cc935c13dd91ea20f7bf4e33eb85e8bf1389b40ddd4203cc",
+      "size_bytes": 134347
+    },
+    {
+      "relative_to_stage3": "timing/raw/bls_ai_categories_2026.html",
+      "sha256": "37ee175c4d119dbd31d7a145f8ff99da80c0820b785a9743cac66fb1abc156cb",
+      "size_bytes": 99176
+    },
+    {
+      "relative_to_stage3": "timing/raw/bls_projections_archive.html",
+      "sha256": "1fa3fba46228a1c978cfad819cca42c1ec826c1361c36e44afa7d848825cb48c",
+      "size_bytes": 86300
+    },
+    {
+      "relative_to_stage3": "timing/raw/education_wage2021_20220922200905.html",
+      "sha256": "b3cb03e49e9ff9e0773f4caa7c428b7fb5c326c2f845bfff151f598469adff2e",
+      "size_bytes": 1044211
+    },
+    {
+      "relative_to_stage3": "timing/raw/forecast_2021-31.html",
+      "sha256": "4bf75355a288c0a5329d06f4c9f44d2da47854683c2ffb3fa07ff1231a9d3ef3",
+      "size_bytes": 67516
+    },
+    {
+      "relative_to_stage3": "timing/raw/forecast_2022-32.html",
+      "sha256": "ac56f64a6b0e33f25de96d37e263725b362dba2913c214038ad235af10233f5a",
+      "size_bytes": 65770
+    },
+    {
+      "relative_to_stage3": "timing/raw/forecast_2023-33.html",
+      "sha256": "47733266bc7e01fde6daa45928e79e63c6cf06e04e2d7464cea5e196e4e83129",
+      "size_bytes": 62942
+    },
+    {
+      "relative_to_stage3": "timing/raw/forecast_2024-34.html",
+      "sha256": "9b83dbccdc2b90525047dbafb139e2ee24e541b326fce0e4a917fd5ad735ca7a",
+      "size_bytes": 62792
+    },
+    {
+      "relative_to_stage3": "timing/raw/forecast_2025-35.html",
+      "sha256": "6ba2fd8cc3f6f26502a0f418b7e3e7d1f98f345572b97a156438f63ac2df6371",
+      "size_bytes": 67720
+    },
+    {
+      "relative_to_stage3": "timing/raw/national_M2021_dl.xlsx",
+      "sha256": "8cb0b63b69a2405206d1bcee55c09f96768e68dca7b77f0abcf1f5a44b951e02",
+      "size_bytes": 289346
+    },
+    {
+      "relative_to_stage3": "timing/raw/oesm21nat.zip",
+      "sha256": "83ad09f19e62104a39024d36ed67cae5c3f7d5b42ff165ca656e0e35241bcf31",
+      "size_bytes": 278152
+    },
+    {
+      "relative_to_stage3": "timing/raw/oews2021_national_page.html",
+      "sha256": "220f64d35dd2715556ba218409fb953b5ebd9049c4953a31be757c71c15fe5b8",
+      "size_bytes": 347240
+    },
+    {
+      "relative_to_stage3": "timing/raw/oews2021_release.html",
+      "sha256": "5b17e7689db3467c485ca104ca9480e00723af6def945fcbdb5e2ac97d52119c",
+      "size_bytes": 221554
+    },
+    {
+      "relative_to_stage3": "timing/raw/table112_2021-31_20220925000818.html",
+      "sha256": "a1315871250dbb6359ef864d3043fe9d52b0975a0b719ebe71101f35c779a0f1",
+      "size_bytes": 766787
+    },
+    {
+      "relative_to_stage3": "timing/raw/table112_2021-31_20220925000818.html.gz",
+      "sha256": "667829160d366e7f33f2e582d879c36245bf4026c1e45737f4dd2bc89cb560a7",
+      "size_bytes": 96146
+    },
+    {
+      "relative_to_stage3": "timing/raw/table112_2022-32_20240221125751.html",
+      "sha256": "124d4a981520fb4c64c75335fd2fef1a3f3befb7bede7e8b7cd3893c09901f6c",
+      "size_bytes": 746661
+    },
+    {
+      "relative_to_stage3": "timing/raw/table112_2023-33_20240926230555.html",
+      "sha256": "b2d18b22d2498b4583e028e202e933c8ce2aa9d3976845f15602d9b1f6777ec3",
+      "size_bytes": 552141
+    },
+    {
+      "relative_to_stage3": "timing/raw/wayback_2021_education_cdx_response.txt",
+      "sha256": "cda64c1590cf1806425447cd4de46498fe15fbd394f4f09c0976f371dbe72f0c",
+      "size_bytes": 173
+    },
+    {
+      "relative_to_stage3": "timing/raw/wayback_table112_cdx_response.txt",
+      "sha256": "19eda61a65d498b2526d373d8303e5246a4749426d80cd69bfd3f176bbc8d5eb",
+      "size_bytes": 1656
+    },
+    {
+      "relative_to_stage3": "timing/source_manifest.json",
+      "sha256": "8bb065b55879713ba65227e2607d92e7b277d2c05a56e0aec8067299614434fd",
+      "size_bytes": 4407
+    },
+    {
+      "relative_to_stage3": "timing/table112_capture_row_crosscheck.csv",
+      "sha256": "23bb29afe74932e6bdc7b0e7d977614103a68b8876788b5bb2238572fc4d3757",
+      "size_bytes": 1740068
+    },
+    {
+      "relative_to_stage3": "timing/table112_typographic_differences.csv",
+      "sha256": "a16e1ed7821286e15be1778f4b300e89bac488695b1e3a30b4f3319e7bf2494e",
+      "size_bytes": 8922
+    },
+    {
+      "relative_to_stage3": "timing/timing_rules.json",
+      "sha256": "f26a47417ee206e638f3d24ca2e69eddcb7c26f2eccf6ac9275e262c0a6448da",
+      "size_bytes": 2410
+    },
+    {
+      "relative_to_stage3": "timing/verify_2021_wages.py",
+      "sha256": "fec5aa5a8b8e9d6f9646b34eacee933042b3cc5686ae5e14c2874726753149a4",
+      "size_bytes": 5625
+    },
+    {
+      "relative_to_stage3": "timing/verify_archived_tables.py",
+      "sha256": "ae307f4a9d49878f5a6f934d2dcaa89894cdc455c4d3ccbb7a3e3e911f459b9e",
+      "size_bytes": 8382
+    },
+    {
+      "relative_to_stage3": "timing/wage2021_crosscheck_audit.json",
+      "sha256": "4f591369ac9c38e05e499cb94aadc6934a877e4565b6b65608979196b66776e3",
+      "size_bytes": 1712
+    },
+    {
+      "relative_to_stage3": "timing/wage2021_independent_crosscheck.csv",
+      "sha256": "701a7e7a570757c4be16dc6512ac28e69a35f074896fe0dd69b2a3535f18ac82",
+      "size_bytes": 312389
+    },
+    {
+      "relative_to_stage3": "timing/wayback_capture_manifest.json",
+      "sha256": "a04c1fe0e969761e0296da61238aab1bd77ad5163de17ba7c18b58821a6d4a14",
+      "size_bytes": 2036
+    },
+    {
+      "relative_to_stage3": "timing/wayback_lookup_attempt.json",
+      "sha256": "08d2b48db327f1fd371156101884bb965ed3fefda16bd47461eaf8675eafdbd4",
+      "size_bytes": 1530
+    },
+    {
+      "relative_to_stage3": "verify_github_submission.py",
+      "sha256": "caaa2df4a070c35d0226afb556d732507732db26f042559c2f0f79b3602cab7c",
+      "size_bytes": 17066
+    },
+    {
+      "relative_to_stage3": "verify_model_core.py",
+      "sha256": "dbc200dea466284717e4373746229798e4ad06189962108bed44b1a910f702cf",
+      "size_bytes": 4375
+    }
+  ],
+  "mutable_exclusions": [
+    "submission_receipt.json",
+    "review/BLS_AI_Manual_Coding_Workbook.xlsx",
+    "review/human_coding_validated.csv",
+    "review/human_coding_audit.json",
+    "prepared/",
+    "results/",
+    "protocol_history/"
+  ],
+  "human_labels_filled_by_freezer": false,
+  "research_models_fitted_by_freezer": false,
+  "note": "Hash locking does not establish external submission. Exact plan, analysis_config.json and this lock must be verified at a real GitHub commit before estimation."
+}
