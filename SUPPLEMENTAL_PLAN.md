@@ -1,0 +1,17 @@
+# Supplemental analysis plan | November 19, 2026
+
+## Does the weight on augmentation change the final revision gradient?
+
+The published Claude and Copilot measures gave different signs in the 2024–34 to 2025–35 update. Those results and the primary outcomes are already known. This document fixes an exploratory follow-up before fitting its models. The four primary tests and the original analysis plan stand as published.
+
+Use the March 2026 labor-market study's task penetration file at Hugging Face revision 0771328fb2cd2d492686260a7ac098628a03b2bc, the March 2025 Economic Index O*NET task statements at 4e5f69fab13a9c3f7d0dcc31a6f893a9818738f6, and the existing project O*NET-to-Employment-Projections crosswalk. Match task statements after lowercasing and normalizing whitespace. Collapse identical strings with identical scores. Exclude ambiguous code mappings and unmatched tasks, reporting coverage. Use one observation per distinct matched task within a BLS occupation. Retain primary-panel occupations with at least one matched task, including matched occupations with zero covered tasks.
+
+For published penetration p > 0, the study's eligibility gates have both been met. Its formula gives the implied automation share A = 2p - 1 and augmentation share U = 2(1 - p). For p = 0, both contributions to exposure are zero. Automation includes first-party API use. Check that A + 0.5U reproduces p and A + U equals the coverage indicator. A and U are gated components, not minutes saved or probabilities of job loss.
+
+Average each component over all matched tasks in the occupation, including explicit zeros. Give tasks equal weight throughout this exercise. This holds occupational task composition fixed and differs from the published occupation score, which weights by working time. Rank the four occupation scores (A alone, U alone, A + 0.5U, A + U) within the common analysis sample, using average ranks for ties, divided by sample size and multiplied by 10. Rerank the published Claude and Copilot scores on this same sample as benchmarks.
+
+Use the one final update and fit a separate slope for each score, per ten rank points. Hold baseline employment weights, theoretical rank, wage and employment controls, major-group and education effects fixed as in the primary model. Drop redundant control columns on the restricted sample. Use CR1 by minor occupational group and a t critical value with clusters minus one degrees of freedom.
+
+The single focal contrast is the equal-mode slope minus the half-weight slope. Estimate its standard error from the difference in the two models' cluster influence scores, retaining covariance. Report all six slopes and the paired contrast with 95% intervals, occupation and cluster counts, the matching rate, and Spearman agreement between the half-weight reconstruction and published Claude score. Interpret any movement toward Copilot descriptively. A change in sign alone cannot establish different staffing responses to automation and augmentation. Do not search other updates, weights or subsamples for a stronger result.
+
+Sources: Massenkoff and McCrory (2026), https://www.anthropic.com/research/labor-market-impacts and https://assets.claude.com/e5f77fc0e77c0185110b5e4b909602791ae76eae.pdf ; Anthropic Economic Index, https://huggingface.co/datasets/Anthropic/EconomicIndex ; U.S. Bureau of Labor Statistics and O*NET occupational crosswalks in the original study.
