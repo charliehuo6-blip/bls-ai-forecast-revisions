@@ -2,6 +2,8 @@
 
 Replication materials for *Are Official Forecasts Pricing In AI? Evidence from BLS Occupational Projections, 2021–2035* by Charlie Huo, Swarthmore College.
 
+**[Read the paper (PDF)](paper.pdf)**
+
 The paper follows the same 641 occupations through five BLS releases. It compares growth projections and their revisions with occupation-level measures of AI use, and tracks when BLS explicitly names AI in its staffing explanations.
 
 ## Reproduce the results
@@ -12,11 +14,14 @@ From a local copy of this repository, run the following with Python 3.10 or late
 python -m pip install numpy pandas scipy
 python reproduce.py
 python exploratory.py --output exploratory_results.json
+python mode_weights.py
 ```
 
 - `reproduce.py` prints the four primary revision slopes with clustered confidence intervals, the spread of revisions, interquartile contrasts and release-level literal mention counts.
 - `exploratory.py` produces the estimates and intervals plotted in **both panels of Figure 1**. It also computes the 2024–34 bridge between them (Table A1), slopes omitting theoretical exposure, and the single contrast between the two middle updates and the first. That contrast clusters across all four updates by minor occupational group.
 - For newly named occupations, the exploratory script gives the equal-weight, theory-adjusted rank difference and HC3 interval. It runs **99,999 draws for each of two permutation tests**, one unrestricted and one preserving entry counts within theoretical-rank deciles (seed 20261119). The whole script took about **3 seconds** in the test environment with single-threaded OpenBLAS. Runtime varies by machine. JSON contains estimates used for the figures, rather than rendered figures.
+
+The [supplemental plan](https://github.com/charliehuo6-blip/bls-ai-forecast-revisions/commit/5583b0323f5dc1226c71d9561d46fd2ad71b3425) precedes estimation of the mode comparisons. `mode_weights.py` reproduces all six final-update slopes and the paired change in Table C1 from `mode_inputs.csv`. To regenerate the input from task-level data, run `python rebuild_modes.py`. It fetches the two pinned Economic Index files, verifies their SHA-256 checksums and applies the study crosswalk in `mode_mapping.csv`. Task statements originate in the U.S. Department of Labor [O*NET database](https://www.onetcenter.org/license_db.html). Task penetration comes from the [March 2026 study appendix](https://assets.claude.com/e5f77fc0e77c0185110b5e4b909602791ae76eae.pdf).
 
 ## Inputs and timing
 
