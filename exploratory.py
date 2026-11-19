@@ -46,6 +46,40 @@ def intervals(beta, scores, n, k):
             for b, s, l, u in zip(beta, se, beta-half, beta+half)]
 
 
+def panel_bridge(frame, comparison, x, groups):
+    """Hold the sample fixed and change one exposure, control block or convention at a time."""
+    weight = comparison["base_2024-34"].to_numpy()
+    fixed_weight = frame.analytic_weight_2021.to_numpy()
+    annual = frame[["growth_2024-34"]].to_numpy()
+    decade = 100*np.expm1(annual/10)
+    one = np.ones(len(frame))
+    claude_share = np.column_stack([one, 10*comparison.anthropic_observed])
+    claude_rank = np.column_stack([one, comparison.claude_rank_per10])
+    basic = ["observed_per10", "theory_per10", "log_employment_2021",
+             "log_wage_uncensored_design_term", "wage_censored_indicator", "wage_missing_indicator"]
+    wage = np.column_stack([one, frame[basic]])
+    major = pd.get_dummies(frame.major_group_code, drop_first=True,dtype=float)
+    within = np.column_stack([wage,major])
+    steps = [
+        ("Claude share alone (A)", claude_share, decade, weight),
+        ("Claude rank alone", claude_rank, decade, weight),
+        ("Two-platform rank alone", x[:,:2], decade, weight),
+        ("Add theoretical rank", x[:,:3], decade, weight),
+        ("Add baseline employment and wages", wage, decade, weight),
+        ("Add major occupation group effects", within, decade, weight),
+        ("Add education", x, decade, weight),
+        ("Use 2021 employment weights", x, decade, fixed_weight),
+        ("Use annual log growth (B)", x, annual, fixed_weight),
+    ]
+    results = []
+    for label, model, outcome, weights in steps:
+        assert np.linalg.matrix_rank(model)==model.shape[1]
+        beta, scores = fit(model,outcome,weights,groups)
+        summary = intervals(beta,scores,*model.shape)[0]
+        results.append(dict(step=label, **summary))
+    return results
+
+
 def permutation(frame, draws=99999, seed=20261119):
     # FWL slope for a candidate set. Partial out intercept and theoretical rank.
     risk = frame.loc[frame["mention_2024-34"].eq(0)].copy()
@@ -60,7 +94,16 @@ def permutation(frame, draws=99999, seed=20261119):
     def slope(idx):
         return resid[idx].sum(axis=-1)/(k - k*k/n - z[idx].sum(axis=-1)**2/zz)
     observed = slope(np.flatnonzero(entry))
-    raw = np.linalg.lstsq(np.column_stack([np.ones(n),entry,theory]),y,rcond=None)[0][1]
+    design_entry = np.column_stack([np.ones(n),entry,theory])
+    coefficients = np.linalg.lstsq(design_entry,y,rcond=None)[0]
+    raw = coefficients[1]
+    # HC3 adjusts each occupation's squared residual for its OLS leverage.
+    bread = np.linalg.inv(design_entry.T @ design_entry)
+    influence = design_entry @ bread
+    leverage = (design_entry*influence).sum(axis=1)
+    adj = (y-design_entry@coefficients)/(1-leverage)
+    se_hc3 = np.linalg.norm(influence[:,1]*adj)
+    half_width = t.ppf(.975,n-design_entry.shape[1])*se_hc3
     np.testing.assert_allclose(raw,observed)
     rng = np.random.default_rng(seed)
     bins = pd.qcut(theory,10,labels=False,duplicates="drop")
@@ -77,7 +120,7 @@ def permutation(frame, draws=99999, seed=20261119):
             b = slope(np.concatenate(idx,axis=1))
             count += int((abs(b)>=abs(observed)-1e-11).sum())
         return dict(draws=draws,as_or_more_extreme=count,two_sided_p=(count+1)/(draws+1))
-    return dict(adjusted_gap=observed,seed=seed,unrestricted=simulate([(np.arange(n),k)]),
+    return dict(adjusted_gap=observed,hc3_se=se_hc3,hc3_lower=raw-half_width,hc3_upper=raw+half_width,seed=seed,unrestricted=simulate([(np.arange(n),k)]),
                 within_theory_deciles=simulate(strata))
 
 
@@ -115,7 +158,9 @@ def main():
         base = comparison["base_"+vintage].to_numpy()
         beta, scores = fit(raw_x,y,base,g)
         benchmark.extend(intervals(beta,scores,n,2))
-    report=dict(vintages=v,raw_coverage_benchmark=benchmark,level_slopes=intervals(bl,sl,n,k),
+    bridge=panel_bridge(f,comparison,x,g)
+    np.testing.assert_allclose([bridge[0]["estimate"],bridge[-1]["estimate"]],[benchmark[3]["estimate"],bl[3]],atol=1e-12)
+    report=dict(vintages=v,bridge_2024_34=bridge,raw_coverage_benchmark=benchmark,level_slopes=intervals(bl,sl,n,k),
         timing_contrast=contrast_ci,no_theory_revision=intervals(bu,su,n,k-1),
         no_theory_levels=intervals(unconditional_levels,uls,n,k-1),
         weighted_corr=cov[0,1]/np.sqrt(cov[0,0]*cov[1,1]),unweighted_corr=us.corr(theory),
