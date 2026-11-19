@@ -1,22 +1,36 @@
 # Are Official Forecasts Pricing In AI?
 
-Charlie Huo · Swarthmore College · November 2026
+Replication materials for *Are Official Forecasts Pricing In AI? Evidence from BLS Occupational Projections, 2021–2035* by Charlie Huo, Swarthmore College.
 
-This repository accompanies *Are Official Forecasts Pricing In AI? Evidence from BLS Occupational Projections, 2021–2035*. It compares four consecutive revisions to ten-year projected employment growth across 641 occupations and counts explicit mentions of AI in BLS Table 1.12.
+The paper follows the same 641 occupations through five BLS releases. It compares growth projections and their revisions with occupation-level measures of AI use, and tracks when BLS explicitly names AI in its staffing explanations.
 
-## Reproduce the primary results
+## Reproduce the results
 
-Download or clone this repository. From its root, run:
+From a local copy of this repository, run the following with Python 3.10 or later.
 
 ```sh
 python -m pip install numpy pandas scipy
 python reproduce.py
+python exploratory.py --output exploratory_results.json
 ```
 
-The script prints the four primary usage coefficients and clustered 95% confidence intervals, the employment-weighted standard deviations of revisions, fitted interquartile contrasts, literal mention counts and the exploratory comparison of newly named occupations. The numerical inputs contain occupation-level public statistics. No workers or platform users are identified.
+- `reproduce.py` prints the four primary revision slopes with clustered confidence intervals, the spread of revisions, interquartile contrasts and release-level literal mention counts.
+- `exploratory.py` produces the estimates and intervals plotted in **both panels of Figure 1**. It also computes the 2024–34 bridge between them (Table A1), slopes omitting theoretical exposure, and the single contrast between the two middle updates and the first. That contrast clusters across all four updates by minor occupational group.
+- For newly named occupations, the exploratory script gives the equal-weight, theory-adjusted rank difference and HC3 interval. It runs **99,999 draws for each of two permutation tests**, one unrestricted and one preserving entry counts within theoretical-rank deciles (seed 20261119). The whole script took about **3 seconds** in the test environment with single-threaded OpenBLAS. Runtime varies by machine. JSON contains estimates used for the figures, rather than rendered figures.
 
-## Data and timing
+## Inputs and timing
 
-- `primary_panel.csv` contains one row per occupation. `growth_*` is annual growth in wage-and-salary employment in log percentage points. `mention_*` indicates an exact word match in any staffing explanation for that occupation and release. Occupations missing from the table receive zero. The script documents the exposure scales and uses 2021 employment weights.
-- The [analysis plan and configuration at the pre-estimation commit](https://github.com/charliehuo6-blip/bls-ai-forecast-revisions/tree/14128730fda96863e2bc70e16e61f2699ee7ba67) identify the prespecified revision models. The literal-word and scale comparisons were added after estimation.
-- The agency provides the [projection archive](https://www.bls.gov/emp/data/projections-archive.htm), [current tables](https://www.bls.gov/emp/tables.htm) and the [2023–33 occupational case studies](https://doi.org/10.21916/mlr.2025.1).
+`primary_panel.csv` contains 641 occupational categories. Each `growth_*` column is annual log growth in wage-and-salary employment, in percentage points. Each `mention_*` column flags an explicit mention of “AI” or “artificial intelligence” in that occupation’s Table 1.12 entries, counting an occupation absent from the table as zero. `comparison_inputs.csv` gives the matched Claude exposure share, Claude rank in units of ten rank points, and base employment (thousands of jobs) for each vintage. The Claude rank comes from the frozen source distribution before restriction to these 641 occupations.
+
+The [pre-estimation commit](https://github.com/charliehuo6-blip/bls-ai-forecast-revisions/tree/14128730fda96863e2bc70e16e61f2699ee7ba67) contains the plan, configuration and frozen-file inventory. Figure 1, the specification bridge, timing contrast and textual comparisons are exploratory. The manuscript supplement includes the full 15-specification revision results and the staffing-bound checks.
+
+## Data sources, attribution and licenses
+
+| Source | Input and terms |
+| --- | --- |
+| U.S. Bureau of Labor Statistics | National Employment Matrix, occupational projections, Table 1.12, baseline controls and occupational crosswalks. BLS identifies its published statistics as public domain and asks users to credit the agency. [Projection archive](https://www.bls.gov/emp/data/projections-archive.htm) · [Current tables](https://www.bls.gov/emp/tables.htm) · [BLS reuse policy](https://www.bls.gov/bls/linksite.htm) |
+| Anthropic Economic Index | Maxim Massenkoff and Peter McCrory (2026), *Labor market impacts of AI: A new measure and early evidence*. The source is the occupation-level job exposure file. This project maps occupations and derives ranks and a cross-platform mean. Anthropic identifies its **data as CC BY** and its code as MIT. [Study](https://www.anthropic.com/research/labor-market-impacts) · [Source file](https://huggingface.co/datasets/Anthropic/EconomicIndex/blob/7a1cc3c17cf7b0f88fc5c63f59059db751a9abae/labor_market_impacts/job_exposure.csv) · [Upstream license statement](https://huggingface.co/datasets/Anthropic/EconomicIndex#license) |
+| Microsoft Research | Kiran Tomlinson, Sonia Jaffe, Will Wang, Scott Counts and Siddharth Suri (2025), *Working with AI*. The v1.1 occupation applicability scores are mapped to BLS occupations, ranked and averaged with the Claude rank. [Source and attribution](https://github.com/microsoft/working-with-ai/tree/v1.1) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| Theoretical exposure | Source measures by Edward Felten, Manav Raj and Robert Seamans (2021), Tyna Eloundou, Sam Manning, Pamela Mishkin and Daniel Rock (2024), and Andrea Eisfeldt, Gregor Schubert and Miao Ben Zhang (2023). The panel contains the derived theoretical rank. Consult each upstream source for its terms. [AIOE](https://github.com/AIOE-Data/AIOE) · [GPTs are GPTs](https://github.com/openai/GPTs-are-GPTs) · [Generative AI and Firm Values](https://github.com/gschubert/genai-firm-values-data) |
+
+The [MIT License](LICENSE) covers this repository’s original Python code. Source data and derived data remain subject to the applicable upstream terms.
