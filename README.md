@@ -14,7 +14,8 @@ From a local copy of this repository, run the following with Python 3.10 or late
 python -m pip install numpy pandas scipy
 python reproduce.py
 python exploratory.py --output exploratory_results.json
-python mode_weights.py
+python mode_weights.py --check-ranks
+python tie_sensitivity.py --output tie_results.json
 ```
 
 - `reproduce.py` prints the four primary revision slopes with clustered confidence intervals, the spread of revisions, interquartile contrasts and release-level literal mention counts.
@@ -23,9 +24,11 @@ python mode_weights.py
 
 The [supplemental plan](https://github.com/charliehuo6-blip/bls-ai-forecast-revisions/commit/5583b0323f5dc1226c71d9561d46fd2ad71b3425) precedes estimation of the mode comparisons. `mode_weights.py` reproduces all six final-update slopes and the paired change in Table C1 from `mode_inputs.csv`. To regenerate the input from task-level data, run `python rebuild_modes.py`. It fetches the two pinned Economic Index files, verifies their SHA-256 checksums and applies the study crosswalk in `mode_mapping.csv`. Task statements originate in the U.S. Department of Labor [O*NET database](https://www.onetcenter.org/license_db.html). Task penetration comes from the [March 2026 study appendix](https://assets.claude.com/e5f77fc0e77c0185110b5e4b909602791ae76eae.pdf).
 
+The optional `--check-ranks` output separates the change in the Claude-only sample from changes in the reference population and the treatment of ties (Appendix C). The [exploratory tie-sensitivity plan](TIE_SENSITIVITY_PLAN.md) was committed after that diagnostic and before the combined-platform analysis. `tie_sensitivity.py` reproduces the Appendix B revision row and Tables B1–B2. It rebuilds the original platform ranks as a check, reranks both observed measures on the same reference populations, and repeats all nine slopes and both 99,999-draw mention tests under each rule. The theoretical control and the permutation strata stay fixed.
+
 ## Inputs and timing
 
-`primary_panel.csv` contains 641 occupational categories. Each `growth_*` column is annual log growth in wage-and-salary employment, in percentage points. Each `mention_*` column flags an explicit mention of “AI” or “artificial intelligence” in that occupation’s Table 1.12 entries, counting an occupation absent from the table as zero. `comparison_inputs.csv` gives the matched Claude exposure share, Claude rank in units of ten rank points, and base employment (thousands of jobs) for each vintage. The Claude rank comes from the frozen source distribution before restriction to these 641 occupations.
+`primary_panel.csv` contains 641 occupational categories. Each `growth_*` column is annual log growth in wage-and-salary employment, in percentage points. Each `mention_*` column flags an explicit mention of “AI” or “artificial intelligence” in that occupation’s Table 1.12 entries, counting an occupation absent from the table as zero. `comparison_inputs.csv` gives the matched Claude exposure share, Claude rank in units of ten rank points, and base employment (thousands of jobs) for each vintage. The Claude rank comes from the frozen source distribution before restriction to these 641 occupations. `usage_reference.csv` contains the two directly mapped platform scores for all 831 tracked occupations before that restriction. Empty values mean no score was mapped (755 scored occupations for Claude and 784 for Copilot). A numeric zero is a published score. Source credits and reuse terms appear below.
 
 The [pre-estimation commit](https://github.com/charliehuo6-blip/bls-ai-forecast-revisions/tree/14128730fda96863e2bc70e16e61f2699ee7ba67) contains the plan, configuration and frozen-file inventory. Figure 1, the specification bridge, timing contrast and textual comparisons are exploratory. The manuscript supplement includes the full 15-specification revision results and the staffing-bound checks.
 
