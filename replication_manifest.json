@@ -1,0 +1,89 @@
+{
+  "schema_version": "1.0",
+  "edition_date": "2026-11-27",
+  "scope": "Current public replication files, excluding this manifest.",
+  "checksum_basis": "Git blob bytes, before checkout line-ending conversion.",
+  "timing_note": "This inventory describes the publication edition; it is not a pre-estimation hash lock.",
+  "files": [
+    {
+      "path": "LICENSE",
+      "sha256": "8fb485d817b763c5acf6f5b98dae5d571ffde505c8e73a05d3b0e9bbef6ba226",
+      "size_bytes": 1068
+    },
+    {
+      "path": "README.md",
+      "sha256": "d708dccf5d6a697256d5c55bcbd6896541cbea5a103427d82d6163e0aa1b61fc",
+      "size_bytes": 7497
+    },
+    {
+      "path": "SUPPLEMENTAL_PLAN.md",
+      "sha256": "14ac3618916dafa31ef171a5015e3dd15710db70cfc32215c190950a9285dda8",
+      "size_bytes": 3521
+    },
+    {
+      "path": "TIE_SENSITIVITY_PLAN.md",
+      "sha256": "fe9b43fcae039a715dd4c2d4c522b6f8c36f3e671fbb86cb5fd5afdd4bf54f3f",
+      "size_bytes": 2395
+    },
+    {
+      "path": "analysis_config.json",
+      "sha256": "25b2ccc21f545e0b9f9ee4148ee25baaa0b63832d8d3e13d0dddaa8c725123cd",
+      "size_bytes": 4130
+    },
+    {
+      "path": "comparison_inputs.csv",
+      "sha256": "efff7646e0f59f3a847cb0a393604eb8f6901114cfffd5ac679ed1a6151ce47c",
+      "size_bytes": 31482
+    },
+    {
+      "path": "exploratory.py",
+      "sha256": "5aaed53173c8cf3ce7427f718683e0a87b6c3ef2ce7f1aa599ddefe5f41dce24",
+      "size_bytes": 8253
+    },
+    {
+      "path": "mode_inputs.csv",
+      "sha256": "ad7d9b64f6f42ca354cc55fa0c1b1ad19c39083411e0c51109460805573812eb",
+      "size_bytes": 34057
+    },
+    {
+      "path": "mode_mapping.csv",
+      "sha256": "e6a5e8f28005f0fbaa51e6dd35267ff61ea8e693e25d01f38dd54cfdf10ea3ec",
+      "size_bytes": 41888
+    },
+    {
+      "path": "mode_weights.py",
+      "sha256": "ce8d9e800992f56e5a26ad436b77a2feb4654baa153f63185bcb31bfa98f81ba",
+      "size_bytes": 3699
+    },
+    {
+      "path": "paper.pdf",
+      "sha256": "ba1d46ce1b88249d12b4406a51850737b50cad92cac2313ce4a8b56e54195660",
+      "size_bytes": 541218
+    },
+    {
+      "path": "primary_panel.csv",
+      "sha256": "cba2914c7b593a71a6138693c4b32cf186539ca514f56bf3deafa03b72f864e5",
+      "size_bytes": 174589
+    },
+    {
+      "path": "rebuild_modes.py",
+      "sha256": "9ae47976cc816ab1432c163aad4631772fb5fba3ec46c64f8d0af211551b1262",
+      "size_bytes": 3307
+    },
+    {
+      "path": "reproduce.py",
+      "sha256": "52a4e9ac9bb92bb67608fd90a2f26539e83c7713a257f31f99ceb750851c201b",
+      "size_bytes": 3498
+    },
+    {
+      "path": "tie_sensitivity.py",
+      "sha256": "0e5498f360f629ae8fc6ccc19352644519d1ffc8008295e95a1afdcbb8b5f406",
+      "size_bytes": 4042
+    },
+    {
+      "path": "usage_reference.csv",
+      "sha256": "7c2204a0610678983d3d498f6ee8987f4e1c53c89b712a490254117372041e99",
+      "size_bytes": 25548
+    }
+  ]
+}
